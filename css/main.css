@@ -1,0 +1,40 @@
+* {
+  display: block;
+  position: relative;
+  margin: 0;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 66px;
+  background: purple;
+  z-index: 10;
+}
+
+.header .header-wraper {
+  margin: 22px 30px;
+}
+
+.header .logo {
+  display: inline-block;
+}
+
+.main-menu {
+  display: inline-block;
+  margin-left: 93px;
+}
+
+.main-menu ul {
+  margin: 0;
+}
+
+.main-menu ul li {
+  display: inline;
+  margin-right: 80px;
+  color: white;
+}
+
+.main-menu ul li:last-child {
+  margin-right: 0px;
+}

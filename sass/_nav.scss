@@ -1,0 +1,18 @@
+.main-menu {
+    display: inline-block;
+    margin-left: 93px;
+
+    ul {
+        margin: 0;
+
+        li {
+            display: inline;
+            margin-right: 80px;
+            color: white;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}
