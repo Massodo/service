@@ -1,0 +1,48 @@
+.about-us {
+    display: flex;
+
+    .left {
+        flex: 1 1;
+
+        img {
+            min-width: 100%;
+            max-height: min-content;
+        }
+    }
+
+    .right {
+        flex: 1 1;
+
+        .content-wrapper {
+            padding: 51px 62px 0px 44px;
+
+            .title {
+                font-size: 26px;
+                font-weight: bold;
+                border-bottom: 2px black solid;
+                padding-bottom: 12px;
+                margin-bottom: 32px;
+                text-transform: uppercase;
+            }
+    
+            .text {
+                font-family: MyriadPro;
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 21px;
+                margin-bottom: 42px;
+            }
+    
+            .button {
+                display: inline-block;
+                padding: 10px 26px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 14px;
+                border: $button-about-us solid;
+                border-radius: 2px;
+                background: $button-about-us;               
+            }
+        }      
+    }
+}

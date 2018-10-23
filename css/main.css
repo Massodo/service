@@ -1,11 +1,40 @@
+@font-face {
+  font-family: MyriadPro;
+  src: url("../src/fonts/myriad/MyriadProBold/MyriadProBold.ttf");
+  src: url("../src/fonts/myriad/MyriadProBoldItalic/MyriadProBoldItalic.ttf");
+  src: url("../src/fonts/myriad/MyriadProItalic/MyriadProItalic.ttf");
+  src: url("../src/fonts/myriad/MyriadProRegular/MyriadProRegular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Sansation;
+  src: url("../src/fonts/sansation/Sansation_Bold.ttf");
+  src: url("../src/fonts/sansation/Sansation_Bold_Italic.ttf");
+  src: url("../src/fonts/sansation/Sansation_Italic.ttf");
+  src: url("../src/fonts/sansation/Sansation_Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
 * {
   display: block;
   position: relative;
   margin: 0;
+  font-family: Sansation;
 }
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+.button {
+  text-align: center;
+  cursor: pointer;
 }
 
 .header {
@@ -16,7 +45,7 @@ a {
   z-index: 10;
 }
 
-.header .header-wraper {
+.header .header-wrapper {
   margin: 22px 30px;
   display: flex;
   justify-content: space-between;
@@ -70,4 +99,53 @@ a {
 
 .main-menu ul li .active {
   color: #097e89;
+}
+
+.about-us {
+  display: flex;
+}
+
+.about-us .left {
+  flex: 1 1;
+}
+
+.about-us .left img {
+  min-width: 100%;
+  max-height: min-content;
+}
+
+.about-us .right {
+  flex: 1 1;
+}
+
+.about-us .right .content-wrapper {
+  padding: 51px 62px 0px 44px;
+}
+
+.about-us .right .content-wrapper .title {
+  font-size: 26px;
+  font-weight: bold;
+  border-bottom: 2px black solid;
+  padding-bottom: 12px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.about-us .right .content-wrapper .text {
+  font-family: MyriadPro;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 21px;
+  margin-bottom: 42px;
+}
+
+.about-us .right .content-wrapper .button {
+  display: inline-block;
+  padding: 10px 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  border: #05a0af solid;
+  border-radius: 2px;
+  background: #05a0af;
 }
