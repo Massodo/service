@@ -7,9 +7,25 @@
 
     .header-wraper {
         margin: 22px 30px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .logo {
+        display: inline-block;    
+    }
+
+    .social-icons {
         display: inline-block;
+
+        .item {
+            display: inline-block;
+            margin-right: 18px;
+            cursor: pointer;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
     }
 }
