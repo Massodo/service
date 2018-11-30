@@ -1,0 +1,58 @@
+.free-quote {
+    background: $blue;
+    display: flex;
+    padding: 40px 30px;
+
+    .text-wrapper {
+        flex: 1 1;
+        color: white;
+
+        .title {
+            font-size: 21px;
+        }
+
+        .text {
+            font-size: 10px;
+        }
+    }
+
+    .form-wrapper {
+        flex: 1 1;
+        font-size: 0;
+
+        .form {
+            display: inline-block;
+
+            .form-element {
+                display: inline-block;
+                padding: 0;
+                height: 50px;
+                width: 250px;
+                background: $blue;
+                border: 1px white solid;
+                padding-left: 15px;
+                color: white;
+                font-size: 12px;
+
+                &::placeholder {
+                    color: white;
+                }
+                &:focus {
+                    outline: none;
+                }
+                &:first-child {
+                    border-right: none;
+                }
+            }           
+    
+            .button {
+                width: 100px;
+                background: white;
+                color: $blue;
+                padding: 0;
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }      
+    }
+}

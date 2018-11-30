@@ -237,3 +237,64 @@ a {
 .clients .clients-wrapper .image-wrapper .image .client-image {
   margin: 0 auto;
 }
+
+.free-quote {
+  background: #097e89;
+  display: flex;
+  padding: 40px 30px;
+}
+
+.free-quote .text-wrapper {
+  flex: 1 1;
+  color: white;
+}
+
+.free-quote .text-wrapper .title {
+  font-size: 21px;
+}
+
+.free-quote .text-wrapper .text {
+  font-size: 10px;
+}
+
+.free-quote .form-wrapper {
+  flex: 1 1;
+  font-size: 0;
+}
+
+.free-quote .form-wrapper .form {
+  display: inline-block;
+}
+
+.free-quote .form-wrapper .form .form-element {
+  display: inline-block;
+  padding: 0;
+  height: 50px;
+  width: 250px;
+  background: #097e89;
+  border: 1px white solid;
+  padding-left: 15px;
+  color: white;
+  font-size: 12px;
+}
+
+.free-quote .form-wrapper .form .form-element::placeholder {
+  color: white;
+}
+
+.free-quote .form-wrapper .form .form-element:focus {
+  outline: none;
+}
+
+.free-quote .form-wrapper .form .form-element:first-child {
+  border-right: none;
+}
+
+.free-quote .form-wrapper .form .button {
+  width: 100px;
+  background: white;
+  color: #097e89;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
