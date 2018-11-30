@@ -1,0 +1,26 @@
+.clients {
+    .main-title {
+        background: white;
+        color: $gray-service;
+        padding-bottom: 80px;
+    }
+
+    .clients-wrapper {
+        margin: 0 45px 80px;
+        .image-wrapper {
+            display: flex;         
+            justify-content: space-between;
+
+            &:first-child {
+                margin-bottom: 85px;
+            }
+            .image {
+                display: inline-block;
+                width: 250px;
+                .client-image {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
