@@ -1,18 +1,21 @@
 .free-quote {
     background: $blue;
     display: flex;
-    padding: 40px 30px;
+    padding: 40px 40px;
 
     .text-wrapper {
         flex: 1 1;
         color: white;
 
         .title {
-            font-size: 21px;
+            font-size: 28px;
+            font-weight: 400;
         }
 
         .text {
-            font-size: 10px;
+            font-size: 12px;
+            margin-top: 26px;
+            font-weight: 400;
         }
     }
 
@@ -21,7 +24,8 @@
         font-size: 0;
 
         .form {
-            display: inline-block;
+            display: flex;
+            justify-content: flex-end;
 
             .form-element {
                 display: inline-block;
@@ -36,9 +40,6 @@
 
                 &::placeholder {
                     color: white;
-                }
-                &:focus {
-                    outline: none;
                 }
                 &:first-child {
                     border-right: none;
