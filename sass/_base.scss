@@ -10,6 +10,16 @@ a {
     color: white;
 }
 
+li {
+    cursor: pointer; 
+}
+
+input {
+    &:focus {
+        outline: none;
+    }
+}
+
 .button {
     text-align: center;
     cursor: pointer;

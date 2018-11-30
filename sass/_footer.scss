@@ -1,0 +1,103 @@
+.footer {
+    display: flex;
+    padding: 40px 40px;
+    background: $gray;
+
+    .left {
+        flex: 1 1;
+
+        .footer-menu-wrapper {
+            .footer-menu {
+                display: inline-block;
+                color: white;
+                padding-left: 75px; 
+
+                .headline {
+                    font-weight: 700;
+                    font-size: 20px;
+                    cursor: context-menu;
+                }
+
+                li {
+                    font-size: 14px;
+                    font-weight: 300;
+                    margin-bottom: 23px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &:first-child {
+                    padding: 0;
+                }  
+            }
+        }
+    }
+
+    .right {
+        flex: 1 1;
+        display: flex;
+        align-content: space-between;
+        flex-wrap: wrap;
+
+        .footer-formt {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            .form {
+                font-size: 0px;
+
+                .form-element {
+                    display: inline-block;
+                    font-size: 16px;
+                }
+
+                .input-element {
+                    background: #cccccc;
+                    border: none;
+                    height: 44px;
+                    padding-left: 15px;
+                    color: #4f4e4e;;
+                }
+    
+                .button {
+                    height: 44px;
+                    border: 1px white solid;
+                    border-left: none;
+                    background: $blue;
+                    color: white;
+                }             
+            }
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            margin-top: 41px; 
+
+            .image-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 36px;
+                height: 36px;
+                margin-right: 9px;
+                cursor: pointer;
+                background: #2e2e2e;
+                border: #2e2e2e 1px solid;
+                border-radius: 50%;
+                
+                &:hover {
+                    background: $blue;
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
